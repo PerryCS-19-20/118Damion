@@ -12,11 +12,12 @@
         <script>
            function testHTML() {
               var userInput= document.getElementById("inputText");
-              var theSpan = document.getElementById("list");
-              var item = document.getElementById("li")
+              var list = document.getElementById("list");
+              var item = document.createElement("li");
               item.textContent = userInput.value;
-              userInput.appendChild(item);
+              list.appendChild(item);
            }
 
         </script>
     </body>
+</html>
