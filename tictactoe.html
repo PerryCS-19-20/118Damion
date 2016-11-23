@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
+   
     <head>
+         <script>
+        var player="X"
+         function play(cellid){
+            var cell= document.getElementById(cellid);
+            bold.textContent = "X"
+
+        }
+    </script>
         <title>
             tic tac toe
         </title> 
@@ -15,21 +24,22 @@
     </style>
     </head>
     <body>
+       
         <table>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="1" onclick="play('1');"></td>
+                <td id="2" onclick="play('2');"></td>
+                <td id="3" onclick="play('3');"></td>
             </tr>
              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="4" onclick="play('4');"></td>
+                <td id="5" onclick="play('5');"></td>
+                <td id="6" onclick="play('6');"></td>
             </tr>
              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="7" onclick="play('7');"></td>
+                <td id="8" onclick="play('8');"></td>
+                <td id="9" onclick="play('9');"></td>
             </tr>
              
         </table>
