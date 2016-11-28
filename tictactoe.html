@@ -3,12 +3,19 @@
    
     <head>
          <script>
-        var player="X"
+        var player="X";
+        var won= false;
          function play(cellid){
             var cell= document.getElementById(cellid);
-            bold.textContent = "X"
-
-        }
+            if(cell.textContent==""){
+                cell.textContent = player;
+                if(player=="X"){
+                    player="O";
+                } else{
+                    player="X";
+                }
+            }
+         }
     </script>
         <title>
             tic tac toe
