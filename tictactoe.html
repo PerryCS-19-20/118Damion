@@ -6,9 +6,10 @@
         var player="X";
         var won= false;
          function play(cellid){
-            var cell= document.getElementById(cellid);
+            var cell= document.getElementById(cellid);  
             if(cell.textContent==""){
                 cell.textContent = player;
+                checkWin();
                 if(player=="X"){
                     player="O";
                 } else{
@@ -20,8 +21,10 @@
              var c1=document.getElementById(c1id);
              var c2=document.getElementById(c2id);
              var c3=document.getElementById(c3id);
-                if((c1.textContent == c2.textContent) && (c2.textContent == c3.textContent) ){
+                if((c1.textContent == c2.textContent) && (c2.textContent == c3.textContent) && (c1.textContent != "") ) {
                     c1.style.color= "red";
+                    c2.style.color= "red";
+                    c3.style.color= "red";
                 }
                     
          }
